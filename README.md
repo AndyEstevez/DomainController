@@ -16,5 +16,5 @@
 ### * Add links for downloads (VirtualBox, Microsoft 11 Server, Windows 11)
 
 1. In VirtualBox, create new VM (Virtual Machine), name the instance and select a file for ISO with a similar like the image, change the Hard Disk space to 50GB.
-     a. After you may be prompted to boot from disk, cancel this popup. Instead, press any key to enter Boot Manager Menu and select Reset.
-     b. Now you will be installing Windows 11
+     - After you may be prompted to boot from disk, cancel this popup. Instead, press any key to enter Boot Manager Menu and select Reset.
+     - Now you will be installing Windows 11.
