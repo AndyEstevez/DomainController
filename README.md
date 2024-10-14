@@ -36,19 +36,18 @@
    
 2. After finish installing and powering off the machine, go to settings in VirtualBox for the instance.
      - Leave Adapter 1 as NAT but enable Adapter 2 and set as Internal Network.
-  
        <img src="images/06-VirtualBox_cEdDJRWORI.png" height='auto' width='auto'/>
 
 
 # Windows Server
 
 1. In the instance for Domain Controller, go to Devices > Insert Guest Additions CD image.
-        - Go to File Explorer > CD Drive > VBoxWindowsAdditions-amd64.
-        - Click Next for all steps and install. <br>
-          <img src="images/07-VirtualBoxVM_18pUhr7lqQ.png" height='500' width='450'/> <img src="images/08-VirtualBoxVM_iVzs8VHvUi.png" height='500' width='450'/>
+   - Go to File Explorer > CD Drive > VBoxWindowsAdditions-amd64.
+   - Click Next for all steps and install. <br>
+     <img src="images/07-VirtualBoxVM_18pUhr7lqQ.png" height='500' width='450'/> <img src="images/08-VirtualBoxVM_iVzs8VHvUi.png" height='500' width='450'/>
 
-2. Type into search to get Network Connections.
-        - Right click Ethernet 1 > Status > Details. The IP Address starts with 10.XXX.XXX.XXX, then we will rename it as INTERNET.
-        - Right click Ethernet 2 > Status > Details. The IP address should start with 169.254.XXX.XXX since its an APIPA Address. We have to update the IPv4 Properties by right clicking > Properties > Internet Protocol Version 4 > Copy the addresses from image. Then, lastly rename it to INTERNAL. <br>
+3. Type into search to get Network Connections.
+   - Right click Ethernet 1 > Status > Details. The IP Address starts with 10.XXX.XXX.XXX, then we will rename it as INTERNET.
+   - Right click Ethernet 2 > Status > Details. The IP address should start with 169.254.XXX.XXX since its an APIPA Address. We have to update the IPv4 Properties by right clicking > Properties > Internet Protocol Version 4 > Copy the addresses from image. Then, lastly rename it to INTERNAL. <br>
         <img src="images/09-VirtualBoxVM_p3elqS5A8Z.png" height='500' width='450'/> <img src="images/10-VirtualBoxVM_tfpRt3FnUN.png" height='500' width='450'/>
 
