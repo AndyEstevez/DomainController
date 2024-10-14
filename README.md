@@ -2,9 +2,9 @@
 
 ## Download
 
-https://www.virtualbox.org/wiki/Downloads
-https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
-https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
+- https://www.virtualbox.org/wiki/Downloads
+- https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
+- https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
 
 ## Prerequisites 
 1. Download & Install VirtualBox
