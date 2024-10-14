@@ -21,7 +21,7 @@
      - After you may be prompted to boot from disk, cancel this popup. Instead, press any key to enter Boot Manager Menu and select Reset.
      - Now you will be installing Windows 11, might need to restart the VM in case of black screens/unresponsive.
   
-   <img src="images/VirtualBox_pSCyqJWuLm.png" height='240' width='240'/> <img src="images/VirtualBoxVM_3VGSY48Qic.png" height='240' width='240'/> <img src="images/VirtualBoxVM_VaKw870xUJ.png" height='240' width='240'/>
+   <img src="images/01-VirtualBox_pSCyqJWuLm.png" height='240' width='240'/> <img src="images/02-VirtualBoxVM_3VGSY48Qic.png" height='240' width='240'/> <img src="images/03-VirtualBoxVM_VaKw870xUJ.png" height='240' width='240'/>
 
 2. After completing the install and reaching the desktop screen of Windows. You can power off the machine.
      - Go to settings in VirtualBox and in the Network tab.
