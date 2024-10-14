@@ -52,6 +52,9 @@
 # Adding Active Directory, DHCP Server, Remote Access
 1. In Server Manager > Add roles & features > click Next until Server Roles > copy from image.
 2. At the section for Role Services via Remote Access, select Routing which will autocheck DirectAccess as well after doing so.
+   <img src="images/11-VirtualBoxVM_zjTao31npj.png" height='500' width='450'/> <img src="images/12-VirtualBoxVM_5yZ4GeJ6pc.png" height='500' width='450'/>
 3. Click Next for rest of steps and install.
+
 4. After installing, in Server Manager click the flag in top right > Promote server to Domain Controller.
 5. In the installation wizard > copy from image > create password for Restore Mode (won't be needed for later) > Click Next for rest of steps > Install
+   <img src="images/13-VirtualBoxVM_vSOIrKcXCy.png" height='500' width='450'/>   <img src="images/14-VirtualBoxVM_vSTdGiMWKw.png" height='500' width='450'/>
