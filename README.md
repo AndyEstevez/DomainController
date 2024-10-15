@@ -1,19 +1,13 @@
-# Domain Controller
+### Domain Controller
 
 ## Download
-
 - https://www.virtualbox.org/wiki/Downloads
 - https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
 - https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
 
 ## Prerequisites 
-1. Download & Install VirtualBox
+1. Install VirtualBox
 2. Download Windows Server 2022 & Windows 11 Enterprise (ISO Version file)
-
-
-### Steps
-### * Add screenshots for each step and explain what each screenshot is doing
-### * Add links for downloads (VirtualBox, Microsoft 11 Server, Windows 11)
 
 
 # Setting Up Client 
@@ -69,3 +63,14 @@
 3. Select NAT for configuration
 4. Lastly, before finishing select INTERNET for public interface to finish rest of steps. <br>
    <img src="images/15-VirtualBoxVM_KnAIwFq6U2.png" height='240' width='240'/> <img src="images/16-VirtualBoxVM_aUOdWWXAxH.png" height='240' width='240'/> <img src="images/17-VirtualBoxVM_flxrgADSis.png" height='240' width='240'/>
+
+# Configuring DHCP
+1. In Server Manager, go to Tools and select DHCP
+2. Double click into your domain's server name > Right click IPv4 > Select New Scope
+   - Name your scope 172.16.0.100-200
+   - For IP Address Range, copy from image (172.16.0.100 - 172.16.0.200) (Length: 24)
+   - Click Next until Default Gateway, copy from image (172.16.0.1)
+   - Get to finish for the wizard <br>
+        <img src="images/18-VirtualBoxVM_RilgVDfwu4.png" height='500' width='450'/>   <img src="images/19-VirtualBoxVM_SBV2Xe2UyR.png" height='500' width='450'/>
+        <img src="images/20-VirtualBoxVM_AJtPXigA3V.png" height='500' width='450'/>   <img src="images/21-VirtualBoxVM_VcbTpvWIW9.png" height='500' width='450'/>
+
