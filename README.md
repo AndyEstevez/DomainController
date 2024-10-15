@@ -1,4 +1,8 @@
 # Domain Controller
+- Setups creating new users for Active Directory
+- Enabling Remote Access for users to the domain
+- Connect the user to DHCP from the available IP addresses
+- Learning to use Windows Server
 
 ### Download
 - https://www.virtualbox.org/wiki/Downloads
