@@ -1,16 +1,16 @@
-### Domain Controller
+# Domain Controller
 
-## Download
+### Download
 - https://www.virtualbox.org/wiki/Downloads
 - https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
 - https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise
 
-## Prerequisites 
+### Prerequisites 
 1. Install VirtualBox
 2. Download Windows Server 2022 & Windows 11 Enterprise (ISO Version file)
 
 
-# Setting Up Client 
+## Setting Up Client 
 1. In VirtualBox, create new VM (Virtual Machine), name the instance and select a file for ISO with a similar like the image, change the Hard Disk space to 50GB.
      - After you may be prompted to boot from disk, cancel this popup. Instead, press any key to enter Boot Manager Menu and select Reset.
      - Now you will be installing Windows 11, might need to restart the VM in case of black screens/unresponsive.
@@ -22,7 +22,7 @@
    <img src="images/04-VirtualBox_WNLxWXMFqC.png" height='auto' width='auto'/>
 
   
-# Setting Up Domain Controller
+## Setting Up Domain Controller
 1. In VirtualBox, create new VM, name the instance and select file with similar name for ISO in image, for Version select Other Windows (64 bit), for Edition its Desktop Experience to get the GUI.<br>
      <img src="images/05-VirtualBox_xpJRFqJHke.png" height='auto' width='auto'/>
    
@@ -31,7 +31,7 @@
        <img src="images/06-VirtualBox_cEdDJRWORI.png" height='auto' width='auto'/>
 
 
-# Windows Server
+## Windows Server
 1. In the instance for Domain Controller, go to Devices > Insert Guest Additions CD image.
    - Go to File Explorer > CD Drive > VBoxWindowsAdditions-amd64.
    - Click Next for all steps and install. <br>
@@ -43,13 +43,13 @@
         <img src="images/10-VirtualBoxVM_tfpRt3FnUN.png" height='500' width='450'/> <img src="images/09-VirtualBoxVM_p3elqS5A8Z.png" height='500' width='450'/>
 
      
-# Adding Active Directory, DHCP Server, Remote Access
+## Adding Active Directory, DHCP Server, Remote Access
 1. In Server Manager > Add roles & features > click Next until Server Roles > copy from image.
 2. At the section for Role Services via Remote Access, select Routing which will autocheck DirectAccess as well after doing so. <br>
    <img src="images/11-VirtualBoxVM_zjTao31npj.png" height='500' width='450'/> <img src="images/12-VirtualBoxVM_5yZ4GeJ6pc.png" height='500' width='450'/>
 3. Click Next for rest of steps and install.
 
-# Configuring Active Directory Domain Services
+## Configuring Active Directory Domain Services
 1. After installing, in Server Manager click the flag in top right > Promote server to Domain Controller.
 2. In the installation wizard > copy from image
    - Create password for Restore Mode (won't be needed for later)
@@ -57,14 +57,14 @@
    - Install <br>
    <img src="images/13-VirtualBoxVM_vSOIrKcXCy.png" height='500' width='450'/>   <img src="images/14-VirtualBoxVM_vSTdGiMWKw.png" height='500' width='450'/>
 
-# Configuring Remote Access
+## Configuring Remote Access
 1. In Server Manager, go to Tools and select Routing & Remote Access
 2. Right click the local server, select Configure & Enable
 3. Select NAT for configuration
 4. Lastly, before finishing select INTERNET for public interface to finish rest of steps. <br>
    <img src="images/15-VirtualBoxVM_KnAIwFq6U2.png" height='240' width='240'/> <img src="images/16-VirtualBoxVM_aUOdWWXAxH.png" height='240' width='240'/> <img src="images/17-VirtualBoxVM_flxrgADSis.png" height='240' width='240'/>
 
-# Configuring DHCP
+## Configuring DHCP
 1. In Server Manager, go to Tools and select DHCP
 2. Double click into your domain's server name > Right click IPv4 > Select New Scope
    - Name your scope 172.16.0.100-200
@@ -75,7 +75,7 @@
         <img src="images/20-VirtualBoxVM_AJtPXigA3V.png" height='500' width='450'/>   <img src="images/21-VirtualBoxVM_VcbTpvWIW9.png" height='500' width='450'/>
 3. Now, right click your domain's server name > Right click to authorize
 
-# Adding User to Active Directory
+## Adding User to Active Directory
 1. In Server Manager, go to Tools and select Active Directory Users & Computers
 2. Right click your domain > New > User
 3. Fill out the fields for the new user > Finish
