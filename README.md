@@ -73,4 +73,11 @@
    - Get to finish for the wizard <br>
         <img src="images/18-VirtualBoxVM_RilgVDfwu4.png" height='500' width='450'/>   <img src="images/19-VirtualBoxVM_SBV2Xe2UyR.png" height='500' width='450'/>
         <img src="images/20-VirtualBoxVM_AJtPXigA3V.png" height='500' width='450'/>   <img src="images/21-VirtualBoxVM_VcbTpvWIW9.png" height='500' width='450'/>
+3. Now, right click your domain's server name > Right click to authorize
 
+# Adding User to Active Directory
+1. In Server Manager, go to Tools and select Active Directory Users & Computers
+2. Right click your domain > New > User
+3. Fill out the fields for the new user > Finish
+4. Now, for that new user, right click into Properties > Member of > Add > Enter "Domain Admins" > Click Check Names <br>
+   
