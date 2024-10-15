@@ -55,6 +55,17 @@
    <img src="images/11-VirtualBoxVM_zjTao31npj.png" height='500' width='450'/> <img src="images/12-VirtualBoxVM_5yZ4GeJ6pc.png" height='500' width='450'/>
 3. Click Next for rest of steps and install.
 
-4. After installing, in Server Manager click the flag in top right > Promote server to Domain Controller.
-5. In the installation wizard > copy from image > create password for Restore Mode (won't be needed for later) > Click Next for rest of steps > Install <br>
+# Configuring Active Directory Domain Services
+1. After installing, in Server Manager click the flag in top right > Promote server to Domain Controller.
+2. In the installation wizard > copy from image
+   - Create password for Restore Mode (won't be needed for later)
+   - Click Next for rest of steps
+   - Install <br>
    <img src="images/13-VirtualBoxVM_vSOIrKcXCy.png" height='500' width='450'/>   <img src="images/14-VirtualBoxVM_vSTdGiMWKw.png" height='500' width='450'/>
+
+# Configuring Remote Access
+1. In Server Manager, go to Tools and select Routing & Remote Access
+2. Right click the local server, select Configure & Enable
+3. Select NAT for configuration
+4. Lastly, before finishing select INTERNET for public interface to finish rest of steps. <br>
+   <img src="images/15-VirtualBoxVM_KnAIwFq6U2.png" height='240' width='240'/> <img src="images/16-VirtualBoxVM_aUOdWWXAxH.png" height='240' width='240'/> <img src="images/17-VirtualBoxVM_flxrgADSis.png" height='240' width='240'/>
