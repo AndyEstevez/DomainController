@@ -80,4 +80,6 @@
 2. Right click your domain > New > User
 3. Fill out the fields for the new user > Finish
 4. Now, for that new user, right click into Properties > Member of > Add > Enter "Domain Admins" > Click Check Names <br>
-   
+        <img src="images/22-VirtualBoxVM_gkM1U05w4o.png" height='500' width='450'/>   <img src="images/23-VirtualBoxVM_iuNTftlsYR.png" height='500' width='450'/>
+        <img src="images/24-VirtualBoxVM_qKnoX4E7d5.png" height='500' width='450'/>   <img src="images/25-VirtualBoxVM_DcCtrMZWqR.png" height='500' width='450'/>
+
